@@ -1,0 +1,56 @@
+{
+    "name": "ControlsMapping",
+    "maps": [
+        {
+            "name": "Controls",
+            "id": "f478d8ec-cbe1-4c24-b3cc-5e9d35104a08",
+            "actions": [
+                {
+                    "name": "Movement",
+                    "type": "Button",
+                    "id": "9f9410ee-b997-425e-b231-282669a6f5a5",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "1D Axis",
+                    "id": "ec3b8bdf-a8d4-4985-8917-52579b43d4cb",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "Clamp(min=-1,max=1)",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Negative",
+                    "id": "39504b28-5295-4070-8d6b-765deda45bc8",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Positive",
+                    "id": "a03ace9d-ba13-4d0a-aa6a-63356bb99363",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
